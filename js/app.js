@@ -4,7 +4,7 @@ let clickedPage = "page-1";
 let HornesArr = [];
 
 function dataValue() {
-    $.ajax(`../data/${clickedPage}.json`).then((data) => {
+    $.ajax(`./data/${clickedPage}.json`).then((data) => {
 
         data.forEach((val, idx) => {
             let newHornes = new Hornes(
